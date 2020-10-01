@@ -2,10 +2,10 @@ from tkinter import *
 import tkinter.messagebox as tmsg
 
 root=Tk()
-root.geometry("250x520")
+root.geometry("350x520")
 root.title("Calculator")
 root.config(bg="SkyBlue1")
-root.wm_iconbitmap("cal.png")
+#root.wm_iconbitmap("cal.png")
 
 def click(event):
     global scvalue
@@ -36,8 +36,8 @@ def click(event):
 
 scvalue = StringVar()
 scvalue.set("")
-entry_widget = Entry(root,textvar=scvalue,font="lucida 20 bold",borderwidth=4,relief=SUNKEN)
-entry_widget.pack(pady=15,fill=X,padx=5,ipadx=10,ipady=3)
+entry_widget = Entry(root,textvar=scvalue,font="lucida 20 bold",borderwidth=4,relief=RAISED)
+entry_widget.pack(pady=15,fill=X,padx=5,ipadx=20,ipady=10)
 
 list1=9
 outer_frame=Frame(root,bg="blue",relief=SUNKEN,borderwidth=6)
